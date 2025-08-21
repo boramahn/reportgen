@@ -1,5 +1,5 @@
 ## 개요
-- 이 문서는 [https://boramahn.github.io/reportgen/static/](https://boramahn.github.io/reportgen/static/) 사용을 위한 파라미터를 설명합니다.
+- 이 문서는 [https://boramahn.github.io/reportgen/static/](https://boramahn.github.io/reportgen/static/) 사용을 위한 쿼리 파라미터를 설명합니다.
 - 이하 파리미터를 조합하여 [짧은 url제공하는 서비스](https://tinyurl.com/)를 이용해 배포합니다.
 
 ## 필수 파라미터 
