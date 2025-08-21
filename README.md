@@ -14,7 +14,7 @@
 
 ### PDF 생성시
 - pdfTitle PDF 내용 중 상단 제목 수정
-- reviewerName 확인
+- reviewerName 검수자 필요한 경우 추가/파라미터 생략시 검수 성명란 출력되지 않음
 
 ## 사용 예시
 ### 기본 
