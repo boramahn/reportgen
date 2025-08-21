@@ -1,8 +1,6 @@
-# URL 파라미터 사용 안내서
-
 ## 개요
-이 문서는 `https://github.com/boramahn/reportgen/static` 사용법을 설명합니다. 
-이하 파리미터를 조합하여 [짧은 url제공하는 서비스](https://tinyurl.com/)를 이용해 배포합니다.
+- 이 문서는 `https://github.com/boramahn/reportgen/static` 사용법을 설명합니다. 
+- 이하 파리미터를 조합하여 [짧은 url제공하는 서비스](https://tinyurl.com/)를 이용해 배포합니다.
 
 ## 필수 파라미터 
 ### api (API 서버 주소) (필수)
