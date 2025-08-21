@@ -264,9 +264,9 @@ window.addEventListener('DOMContentLoaded', async function() {
     const committeeName = urlParams.get('committeeName');
     const organizer = urlParams.get('organizer');
     const participants = urlParams.get('participants');
-    // const reportTitle = urlParams.get('reportTitle');
-    const reportSubTitle = urlParams.get('reportSubTitle');
-    const reportTitle = urlParams.get('reportTitle') || urlParams.get('title');
+    // const webTitle = urlParams.get('webTitle');
+    const webSubTitle = urlParams.get('webSubTitle');
+    const webTitle = urlParams.get('webTitle') || urlParams.get('title');
 
 
     const paramPdfTitle = urlParams.get('pdfTitle');
@@ -285,16 +285,16 @@ window.addEventListener('DOMContentLoaded', async function() {
         reviewerNameElement.value = decodedReviewerName;
     }
     // 부제목 업데이트
-    if (reportSubTitle) {
-        const decodedSubTitle = decodeURIComponent(reportSubTitle);
-        const subTitleElement = document.getElementById('reportSubTitle');
+    if (webSubTitle) {
+        const decodedSubTitle = decodeURIComponent(webSubTitle);
+        const subTitleElement = document.getElementById('webSubTitle');
         subTitleElement.textContent = decodedSubTitle;
     }
 
     // 제목 업데이트
-    if (reportTitle) {
-        const decodedTitle = decodeURIComponent(reportTitle);
-        const titleElement = document.getElementById('reportTitle');
+    if (webTitle) {
+        const decodedTitle = decodeURIComponent(webTitle);
+        const titleElement = document.getElementById('webTitle');
         titleElement.textContent = decodedTitle;
 
         // 이모지가 포함되어 있지 않으면 추가
@@ -302,9 +302,9 @@ window.addEventListener('DOMContentLoaded', async function() {
         titleElement.textContent = finalTitle;
     }
     // 부제목 업데이트
-    if (reportSubTitle) {
-        const decodedSubTitle = decodeURIComponent(reportSubTitle);
-        const subTitleElement = document.getElementById('reportSubTitle');
+    if (webSubTitle) {
+        const decodedSubTitle = decodeURIComponent(webSubTitle);
+        const subTitleElement = document.getElementById('webSubTitle');
         subTitleElement.textContent = decodedSubTitle;
     }
 
