@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 생성</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="reportTitle" name="reportTitle" >📄 모임 활동 기록</h1>
+        <p id="reportSubTitle" name="reportSubTitle"  class="subtitle"></p>
+
+        <form id="reportForm">
+            <input type="hidden" id="pdfTitle" name="pdfTitle" value="모임 활동 기록">  
+            <input type="hidden" id="reviewerName" name="reviewerName" value="None">
+            <table class="form-table">
+                <tr>
+                    <th>위원회명</th>
+                    <td>
+                        <input type="text" id="committeeName" name="committeeName" placeholder="예: 책을 읽어요" required>
+                        <div class="helper-text">위원회 또는 조직의 정식 명칭</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>일시/장소</th>
+                    <td>
+                        <input type="text" id="datetimeLocation" name="datetimeLocation"
+                            placeholder="예: 2025년 7월 15일 14:00 ~ 16:00 / 미사 초등학교 도서관" required>
+                        <div class="helper-text">활동 날짜, 시간 및 장소</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>주최</th>
+                    <td>
+                        <input type="text" id="organizer" name="organizer" placeholder="예: 홍길동 " required>
+                        <div class="helper-text">행사를 주최한 조직 또는 담당자</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>참석자</th>
+                    <td>
+                        <textarea id="participants" name="participants" placeholder="예: 허균(작가), 홍길동(사회), 율도왕(참석자) 외 20명"
+                            required></textarea>
+                        <div class="helper-text">주요 참석자 명단 및 역할</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>활동내용</th>
+                    <td>
+                        <textarea id="activityContent" name="activityContent" style="min-height: 150px;"
+                            placeholder="활동의 주요 내용을 상세히 작성해주세요. 예: 독서 토론, 작가 초청 강연 등"
+                            required></textarea>
+                        <div class="helper-text">활동의 목적, 진행 과정, 주요 내용 등을 자세히 기술</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>활동사진</th>
+                    <td>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="image" name="image" accept="image/*">
+                            <label for="image" class="file-input-label" id="fileLabel">
+                                클릭하여 이미지 선택 또는 드래그 앤 드롭
+                            </label>
+                        </div>
+                        <div class="helper-text">활동 현장 사진 (JPG, PNG 등)</div>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="submit" id="submitBtn">PDF 생성</button>
+
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>PDF를 생성하는 중입니다...</p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            ✅ PDF가 생성되었습니다!
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            ❌ PDF 생성 중 오류가 발생했습니다.
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+    <!--1유형 -->
+
+</body>
+
+</html>

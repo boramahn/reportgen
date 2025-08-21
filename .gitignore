@@ -1,0 +1,5 @@
+static/config.js
+*/__MACOSX
+temp/*.pdf
+*.log
+__pycache__/
