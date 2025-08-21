@@ -19,9 +19,9 @@
 ## 사용 예시
 ### 기본 
 ```
-http://localhost:8080/?api=my.k3s.url:8000
+http://boramahn.github.io/reportgen/static?api=my.k3s.url:8000
 ```
 ### 전체 파라미터 포함
 ```
-http://localhost:8080/?api=my.k3s.url:8000&reportTitle=방학기록&reportSubTitle=6학년3반&pdfTitle=방학기록&reviewerName=한생님 선생님
+http://boramahn.github.io/reportgen/static?api=my.k3s.url:8000&reportTitle=방학기록&reportSubTitle=6학년3반&pdfTitle=방학기록&reviewerName=한생님 선생님
 ``
