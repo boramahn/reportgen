@@ -11,7 +11,7 @@ function getApiUrl() {
         // 쿼리 파라미터가 있으면 사용
         // http:// 또는 https://가 없으면 추가
         if (!apiParam.startsWith('http://') && !apiParam.startsWith('https://')) {
-            return `http://${apiParam}`;
+            return `https://${apiParam}`;
         }
         return apiParam;
     }
